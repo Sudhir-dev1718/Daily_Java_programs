@@ -1,0 +1,165 @@
+//Reverse a number
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int rem,rev=0;
+        
+        while(n!=0)
+        {
+            rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+        }
+        System.out.print(rev);
+    }
+}
+
+//palindrom or  not
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int n1=n;
+        int rem,rev=0;
+        
+        while(n!=0)
+        {
+            rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+        }
+        
+        if(rev==n1)
+        {
+            System.out.print("its palindrom");
+        }
+        else{
+            System.out.print("not a palindrom");
+        }
+    }
+}
+
+//count of digit
+import java.util.*;
+class main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        long n=sc.nextInt();
+        
+        int count=0;
+        while(n!=0)
+        {
+            count++;
+            n=n/10;
+        }
+        System.out.print(count);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
