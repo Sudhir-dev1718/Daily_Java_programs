@@ -1,0 +1,1381 @@
+ array revesre:
+
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String n=sc.nextLine();
+        
+        // String arr[]=new String[n];
+        // for(int i=0;i<n;i++){
+        //     arr[i]=sc.nextLine();
+        // }
+        char[] a=n.toCharArray();
+
+        int l=a.length;
+        for(int i=0;i<l;i++){
+            for(int j=l-1;j>=0;j--){
+                System.out.print(a[j]+" ");
+            }
+            
+           
+            break;
+        }
+        
+            System.out.print("");
+            
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+normal reverse:
+
+///
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        String a=sc.nextLine();
+        String result="";
+        
+        // int inw=Integer.parseInt(a);
+        
+        int n=a.length();
+        
+        // int n=a.length;
+        
+        
+        for(int i=n-1;i>=0;i--){
+            result+=a.charAt(i);
+        }
+            
+        
+        System.out.print(result);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Max AND MIN:
+
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        Arrays.sort(arr);
+        
+        int min=arr[0];
+        int max=arr[n-1];
+        int sum=arr[0]+arr[n-1];
+        
+        System.out.println("minimum value is = "+min);
+        System.out.println("max value is = "+max);
+        System.out.print("sum = 5 + 9 = "+ sum);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+no using sort method///
+
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);   
+        
+        int n=sc.nextInt();
+    
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int temp=0;
+        
+        
+        
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length;j++){
+                if(arr[i]<arr[j]){
+                    temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
+                }
+            }
+        }
+        for(int i=0;i<n;i++){
+            // arr[i]=sc.nextInt();
+                System.out.print(arr[i]+" ");
+        }
+        
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+revome the same value;
+//
+// You are using Java
+import java.util.*;
+class main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0;
+        
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        int v=sc.nextInt();
+        
+        char[] ch=n.toCharArray();
+        
+        // int l=ch.length();
+        
+        for(int i=0;i<ch.length;i++){
+            if(i==v){
+                count++;
+            }
+            System.out.print(i);
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+holidays codes:::
+
+palindrom:
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int n1=n;
+        
+        int rem=0;
+        int rev=0;
+        
+        while(n!=0){
+            rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+            
+        }
+       if(rev==n1){
+           System.out.print("it is palindrom");
+       }
+       else{
+           System.out.print("not a palindrom");
+       }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+//count the vowels;;;
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        
+        int count=0;
+        
+        //int l=str.toLowerCase(); to covert uppercase to lowercase if the upper case is present means
+        
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u' ){
+                count++;
+            }
+        }
+        System.out.print(count);
+        
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+//this code is to check whether the vowels is present or not;;
+
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        
+        int count=0;
+        
+        //int l=str.toLowerCase(); to covert uppercase to lowercase if the upper case is present means
+        
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u' ){
+                count++;
+            }
+        }
+        
+      
+            if(count==0){
+                System.out.print("there is no vowels presents");
+            }
+            else{
+                System.out.print("there is vowels presents");
+            }
+        
+        System.out.print("");
+       
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+TO FIND PRIME NUMBER OWN SIMPLE PROGRAM;;
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i=2;
+        int flag=0;
+        
+        while(i<n){
+            if(n%i==0){
+                
+                flag++;
+            }
+            i++;
+            
+            
+        }
+        if(flag>0){
+            System.out.print("it is not a prime");
+            
+        }
+       else{
+           System.out.print("is a prime");
+       }
+        
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+RIGHT ANGLE TRIANGLE::
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++)
+            {
+            System.out.print("*");
+        }
+        System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+RIGHT ANGLE TRIANGLE::
+
+import java.util.*;
+class Main{
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+
+
+            
+            for(int j=2*(n-i);j>=0;j--){ //IT IS FOR THE SPACES
+                System.out.print(" ");
+            }
+            
+
+            
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Pyramid Star Pattern:;
+
+import java.util.*;
+class Main{
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+            
+            for(int j=n-i;j>1;j--){
+                System.out.print(" ");  // for spaceing
+            }
+            
+            
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+NOTE PATTERN;
+
+1)right angle==                 space(j=2*(n-i);j>=0;j--) // for space mugup;
+2)Pyramid Star Pattern==        space(j=n-i;j>1;j--)      //for space  it is the only change happens;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+AMSTRONG NUMBER::
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        String numstr=Integer.toString(n);
+        int numlen=numstr.length();
+        
+        int amstrong=0;
+        
+        for(int i=0;i<numlen;i++){
+            
+            int digit=Integer.parseInt(Character.toString(numstr.charAt(i)));
+            
+            amstrong+=Math.pow(digit,numlen);
+            
+        }
+        
+        if(amstrong==n){
+            System.out.print("it is amstrong "+amstrong);
+        }
+        else{
+            System.out.print("not a amstrong "+amstrong+" "+ n);
+        }
+    } 
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+DUPLICATE VALUE REMOVE::
+
+import java.util.*;
+class main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0;
+        
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+                
+        List<Integer> al = new ArrayList<>();
+        
+        for(int a : arr){                //1 2 2 4 5
+            if(!al.contains(a)){ 
+                al.add(a);
+            }
+        }
+        System.out.print(al);
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+FIRST OCCURECE::
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        String str=sc.nextLine();
+        
+        System.out.print(str.indexOf('i',4)); //i=ch 4=int str
+  // THIS STATEMENT IS FOR THE SECOND OCCURRENCE  FOR EX:KAVIYASUDHIR=HERE i IS PrESEND INN 4 pOSITION but we want  the second accourrence of i so the second i is present in the 10th position
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        String str=sc.nextLine();
+        
+        String str1=sc.nextLine();
+        
+        System.out.print(str.indexOf(str1));// same but here we seach for specified subString
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        String str=sc.nextLine();
+        
+        String str1=sc.nextLine();
+        
+   if(!str.contains(str1)){
+            System.out.print("-1");
+        }
+        else{
+            System.out.print(str.indexOf(str1));
+        }
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+COUNT OF DIGITS;;
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        long n=sc.nextLong();
+        
+        long ans=n;
+        int count=0;
+        
+        while(ans>0){
+            long rem=ans%10;
+            count++;
+            ans=ans/10;
+        }
+        System.out.print(count);
+        
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------
+ SORTING WITHOUT OUT USING SORT::
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int temp=0;
+        int arr[]=new int[n];
+        
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        for(int i=0;i<n-1 ;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(arr[j]>arr[j+1]){
+                    temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+            
+        }
+        for(int 69 : arr){
+                System.out.print(i+" ");
+        }
+        
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+FIBANACI SERIES::
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c;
+        int count=10;
+        
+        System.out.print(a+" "+b);
+        
+        for(int i=2;i<=count;i++){
+            c=a+b;
+        System.out.print(" "+c);
+        a=b;
+        b=c;
+        }
+        
+    } 
+}
+______________________________________________________________________________________________________________________________________
+
+SWAP WITHOUT USING THIRD VARIABLE:: BASIC METHOD//
+
+import java.util.*;
+class Main{
+        public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+        
+        int x=17;
+        int y=18;
+        
+        System.out.println(x+" "+y);
+        x=x+y;
+        y=x-y;
+      x=x-y;
+    System.out.println(x+" "+y);
+
+    }
+    
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+
+USING STRINGBUFFER TO REVERSE A STRING;
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        String str=sc.nextLine();
+        
+        StringBuffer buffer=new StringBuffer();
+        
+        buffer.append(str);
+        
+        buffer.reverse();
+        
+        System.out.print(buffer);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+//Array	Write a program to cyclically rotate an array by one.
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        System.out.print(arr[n-1]+" ");
+        for(int i=0;i<n-1;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.print("");
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+STAR ALPA PATTERN:
+A
+BB
+CCC
+DDDD
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        char ch='A';
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(ch+" ");
+                
+            }
+        System.out.println(" ");
+        ch++;
+        }
+    }
+}
+
+
+A
+AB
+ABC
+ABCD 
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        for(int i=1;i<=n;i++){
+        char ch='A';
+            for(int j=1;j<=i;j++){
+                System.out.print(ch+" ");
+                
+        ch++;
+            }
+        System.out.println(" ");
+        }
+    }
+}  
+
+=============================================================================================================================================================================
+
+FIND THE KTH VALUE OF THE ARRAY::
+
+class Solution {
+    public static int kthSmallest(int[] arr, int k) {
+        // Your code here
+        Arrays.sort(arr);
+      
+            return arr[k-1];       //   K=3  arr starts from 0 so we here print k-1 to find the arr
+        
+    }
+}
+==================================================================================================================================================================================
+merge two arrays:
+import java.util.*;
+
+public class Main {
+
+	public  static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int n1=sc.nextInt();
+		int n2=sc.nextInt();
+		int count=0;
+		
+		int arr1[]=new int[n1];
+		int arr2[]=new int[n2];
+		
+		for(int i=0;i<n1;i++) {
+			arr1[i]=sc.nextInt(); 
+		}
+		
+		for(int j=0;j<n2;j++) {
+			arr2[j]=sc.nextInt(); 
+		}
+		int ci=0;
+		int merge[]=new int[arr1.length+arr2.length];
+		
+		for(int i=0;i<arr1.length;i++){
+		    if(arr1[i]!=0){
+		    merge[ci]=arr1[i];
+		    ci++;
+		}
+		}
+		for(int j=0;j<arr2.length;j++){
+		    if(arr2[j]!=0){
+		    merge[ci]=arr2[j];
+		    ci++;
+		    }
+		}
+	
+	int filter[]=Arrays.copyOf(merge,ci);
+	Arrays.sort(filter);
+	
+	
+	    System.out.print(Arrays.toString(filter));
+	
+	}
+}
+===================================================================================================================================================
+in the series of arrays which is grater:
+
+like 
+3
+12 34 45
+output: 45 like 4+5=9
+
+// You are using Java
+    import java.util.*;
+    class Main{
+        public static void main(String[] args){
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            
+            int arr[]=new int[n];
+            for(int i=0;i<n;i++){
+                arr[i]=sc.nextInt();
+            }
+            
+            Arrays.sort(arr);
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+            
+            int rem=0;
+            int total=0;
+            int ans =0 ;
+            for(int i=0;i<n;i++){
+            int rev=0;
+                int n1 = arr[i];
+                while(n1!=0){
+                    rem=n1%10;
+                    rev=rev+rem;
+                    n1=n1/10;
+                }
+                System.out.println(arr[i]);
+                // total =Math.max(total,rev);
+                if(total<rev){
+                    total = rev;
+                    ans = arr[i];
+                }
+                
+            }
+            System.out.println();
+            
+        for(int i=0;i<n;i++){
+        }
+            System.out.print(ans);
+        }
+    }
+============================================================================================================================================================================
+SUM OF ALL MATRIX:
+
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        
+        int arr[][]=new int[n][m];
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        
+        int total=0;
+        for(int i=0;i<arr.length;i++)
+      {
+    for(int j=0;j<arr.length;j++){
+        
+   total+=arr[j][i];
+    }
+    }
+        for(int i=0;i<n;i++)
+      {
+    for(int j=0;j<m;j++){
+        
+   
+    }
+    }
+    System.out.print(total+" ");
+}
+}
+
+//EX:
+m=3
+n=3
+1 2 3
+1 2 3
+1 2 3 output=17 sum of all numbers
+====================================================================================================================================================================================== 
+SUM OF INDUVIDUAL ROW AND COLUMN:
+
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        
+        int arr[][]=new int[n][m];
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        
+        int row=0;
+        int column=0;
+        
+        for(int i=0;i<arr.length;i++)
+      {
+          row=0;
+    for(int j=0;j<arr.length;j++){
+        row+=arr[i][j];
+    }
+        System.out.print("sum of rows : "+row);
+    System.out.println();
+    }
+
+
+
+        for(int i=0;i<n;i++)
+      {
+          column=0;
+    for(int j=0;j<m;j++){
+         
+         column+=arr[j][i];
+    }
+         System.out.print("sum of column : "+column);
+    System.out.println();
+    }
+}
+}
+
+//EX;
+m=3          output:sum of rows : 6
+n=3                    sum of rows : 11
+1 2 3
+1 7 3                    sum of rows : 6
+1 2 3                    sum of column : 3
+                    sum of column : 11
+                    sum of column : 9  
+=======================================================================================================================================================                    
+// You are using Java
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         int n1=sc.nextInt();
+//         int n2=sc.nextInt();
+        
+//         int arr1[]=new int[n1];
+//         int arr2[]=new int[n2];
+        
+//         for(int i=0;i<n1;i++)
+//         {
+//             arr1[i]=sc.nextInt();
+//         }
+//         for(int j=0;j<n2;j++)
+//         {
+//             arr2[j]=sc.nextInt();
+//         }
+        
+        
+        
+        
+//         int arr3[]=new int[arr1.length+arr2.length];
+//         int ci=0;
+        
+//         for(int i=0;i<arr1.length;i++)
+//         {
+//             if(arr1[i]!=0){
+//             arr3[ci]=arr1[i];
+//             ci++;
+//             }
+//         }
+//         for(int j=0;j<arr2.length;j++)
+//         {
+//             if(arr2[j]!=0){
+//             arr3[ci]=arr2[j];
+//             ci++;
+//             }
+//         }
+//         // int filter[]=Arrays.copyOf(arr3,ci);
+//         // Arrays.sort(filter);
+        
+//         for(int i=0;i<arr3.length;i++){
+//             if(arr3[i]!=0){
+            
+//         System.out.print(arr3[i]+" ");
+//             }
+//         }
+        
+//     }
+// }
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=sc.nextInt();
+//         }
+        
+//       Map<Integer,Integer> value=new HashMap<>();
+       
+//       for(int i=0;i<arr.length;i++)
+//       {
+//         value.put(arr[i],value.getOrDefault(arr[i],0)+1);   
+//       }
+//         for(Map.Entry<Integer,Integer> entry:value.entrySet()){
+//             System.out.println(entry.getKey()+" "+entry.getValue());
+//         }
+        
+//     }
+// }
+
+
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+        
+//         String rev="";
+//         char ch;
+//         for(int i=0;i<str.length();i++){
+//          ch=str.charAt(i);
+//             rev=ch+rev;
+//         }
+//         if(str.equals(rev)){
+//             System.out.print("palindrom");
+//         }
+//         else{
+//             System.out.print("not a palindrom");
+//         }
+//     }
+// }
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+        
+//         int rem,rev=0;
+//         int n1=n;
+        
+//         for(int i=0;i<n;i++)
+//         {
+//             rem=n%10;
+//             rev=rev*10+rem;
+//             n=n/10;
+//         }
+        
+//         if(n1==rev){
+//             System.out.print("palindrom");
+//         }
+//         else{
+//             System.out.print("not a palindrom");
+//         }
+//     }
+// }
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+        
+//         for(int i=0;i<arr.length;i++){
+//             arr[i]=sc.nextInt();
+//         }
+        
+//         for(int i=0;i<arr.length-1;i++)
+//         {
+//             for(int j=i+1;j<arr.length;j++){
+//                 if((arr[i]==arr[j]) && (i!=j))
+//                 {
+//                     System.out.println("dublicates "+arr[j]);
+//                     break;
+//                 }
+//             }
+            
+//         }
+//     }
+// }
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         HashSet<Integer> set=new HashSet<>();
+        
+//         int n=sc.nextInt();
+
+        
+//         for(int i=0;i<n;i++)
+//         {
+//             int input=sc.nextInt();
+//             if(!set.add(input));
+//             {
+//                 System.out.println("duplicate: "+ input);
+//             }
+//         }
+//         System.out.print(set);
+        
+//     }
+// }
+
+/*import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        int k=sc.nextInt();
+        int fag=0;
+        
+        for(int i=0;i<arr.length-1;i++)
+        {
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]+arr[j]==k){
+                    System.out.print("true");
+                    fag=1
+                    break;
+                }
+                }
+            }
+                if(fag==0){
+                    System.out.print("not found");
+                }
+        
+    }
+}*/
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+        
+        
+//         for(int i=0;i<str.length();i++)
+//         {
+//             for(int j=i+1;j<str.length();j++){
+//                 if(str.charAt(i)==str.charAt(j)){
+//                     System.out.print("flase");
+                  
+//                      return;
+//                 }
+//             }
+//         }
+        
+//             System.out.print("true");
+        
+        
+//     }
+// }
+
+
+//It checks whether there are any duplicate elements in the input array.
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+        
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=sc.nextInt();
+//         }
+        
+        
+//         for(int i=0;i<arr.length-1;i++){
+//             for(int j=i+1;j<arr.length;j++){
+                
+//                 if(arr[i]==arr[j]){
+//                     System.out.print("true");
+//                     return; 
+//                 }
+                
+//             }
+//         }
+//         System.out.print("flase");
+//     }
+// }
+   
+
+
+
+   Your program is solving this:
+
+"Rotate an array to the right by K positions."
+
+🔁 Each rotation moves the last element to the front.
+
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+//         for(int i=0;i<n;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         int j=0;
+//         int k=sc.nextInt();
+        
+//         while(k>0){
+//             int temp=arr[arr.length-1];
+            
+//             for( j=arr.length-1;j>0;j--)
+//             {
+//                 arr[j]=arr[j-1];
+                
+//             }
+//             arr[j]=temp;
+//             k--;
+//         }
+//         for(j=0;j<n;j++)
+//         {
+//             System.out.print(arr[j]+" ");
+//         }
+        
+//     }
+// }
+
+
+
+
+
+
+
+// import java.util.*;
+// class Main{
+// 	    public static void main(String[] args)
+// 	    {
+// 	        Scanner sc=new Scanner(System.in);
+// 	        int n=sc.nextInt();
+	        
+// 	        int arr[]=new int[n];
+// 	        for(int i=0;i<n;i++)
+// 	        {
+// 	            arr[i]=sc.nextInt();
+// 	        }
+	        
+// 	       Map<Integer,Integer> value=new HashMap<>();
+	       
+// 	       for(int i=0;i<arr.length;i++)
+// 	       {
+// 	        value.put(arr[i],value.getOrDefault(arr[i],0)+1);   
+// 	       }
+// 	        for(Map.Entry<Integer,Integer> entry:value.entrySet()){
+// 	           if(entry.getValue()==1){
+// 	               System.out.print(entry.getKey());
+// 	           }
+// 	        }
+	       
+	        
+// 	    }
+// 	}
+
+// import java.util.*;
+// class Main{
+//     public static void main(String[] args)
+//     {
+        
+//       int arr[]={4,1,2,1,2}; 
+        
+//         for(int i=0;i<arr.length-1;i++){
+//             int count=0;
+//             for(int j=0;j<arr.length;j++){
+                
+//                 if(arr[i]==arr[j])
+//                 {
+//                 count++;
+//                 }
+              
+//             }
+            
+//             if(count==1){
+//                 System.out.print(arr[i]);
+//                 break;
+//             }
+            
+//         }
+        
+//     }
+// }
+
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        int arr[]={4,1,2,1,2};
+        int count=0;
+        
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length;j++){
+                if(arr[i]==arr[j]){
+                    count++;
+                }
+                
+            }
+            if(count==1){
+                System.out.print(arr[i]);
+            }
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+FIND THE FIRST AND LAST POSITION OF THE ELEMENT:
+
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        int arr[]={2,3,3,4,4,4,6};
+        int target=4;
+        
+        int i=0;
+        int j=arr.length-1;
+        
+        while(i<j)
+        {
+            if(arr[i]==target && arr[j]==target)
+            {
+                System.out.print(i+" "+j);
+                break;
+            }
+            
+            else if(arr[i]==target && arr[j]!=target)
+            {
+            j--;
+            }
+            else if(arr[i]!=target && arr[j]==target)
+            {
+                i++;
+            }
+            else{
+                i++;
+                j--;
+            }
+        }
+             
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+SUBSTRING;;
+
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        
+        String a=str.substring(7,str.length());
+        
+        System.out.print(a);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+FIND THE LONGEST SUBSTRING:
+
+// You are using Java
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        String str="abcaabcb";
+        int start=0;
+        int end=0;
+        int maxlen=1;
+        
+        Set<Character> seen=new HashSet<>();
+        
+        while(end<str.length()){
+            
+            char ch=str.charAt(end);
+            
+            while(seen.contains(ch))
+            {
+                seen.remove(str.charAt(start));
+                start++;
+            }
+            
+            seen.add(ch);
+            
+            int windowsize=end-start+1;
+            
+            maxlen=Math.max(maxlen,windowsize);
+            end++;
+            
+            
+            
+            
+        }
+        System.out.print(maxlen);
+        
+        
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+duplicate finding using ArrayList
+
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        
+        
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        List<Integer>  unique=new ArrayList<>();
+        List<Integer>  duplicate=new ArrayList<>();
+        
+        for(int a:arr)
+        {
+        
+        if(! unique.contains(a))
+        {
+             unique.add(a);
+        }
+        
+        
+        
+        else if(!duplicate.contains(a))
+        {
+            duplicate.add(a);
+        }
+    }
+    // System.out.println(unique);
+    System.out.print(duplicate);
+}
+    
+    }
+    =============================================================================================================================================
