@@ -1,0 +1,39 @@
+HASHMAP basics
+
+import java.util.*;
+
+class Main{
+    public static void main(String[] args)
+    {
+        HashMap<String,Integer> empid=new HashMap<>();
+        
+        empid.put("sudhir",1718);
+        empid.put("vino",4545);
+        empid.put("shyam",1717);
+        empid.put("dhoni",7777);
+        
+        
+        System.out.println(empid);
+        
+        System.out.println(empid.get("sudhir"));
+        
+        System.out.println(empid.remove("dhoni"));
+        System.out.println(empid);    
+        
+        System.out.print(empid.containsKey("shyam"));
+        System.out.println(empid.containsKey("virat"));
+        
+        
+        System.out.print(empid.containsValue(1111));
+        System.out.println(empid.containsValue(1718));
+        
+        // empid.put("sudhir",1);
+        // System.out.println(empid);      // OR we use repalce key word
+        
+        empid.replace("vino",2);
+        empid.replace("sudhir",1);
+        System.out.print(empid);
+          
+        
+    }
+}
