@@ -1,0 +1,80 @@
+You are using Java
+
+// code for to find ODD or EVEN
+import java.util.*;
+class Main {
+    
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        if(n%2==0)
+        {
+            System.out.print(n+" is even number");
+        }
+        
+        else{
+            System.out.print(n+" is odd number");
+        }
+    }
+}
+
+
+// code for to find Sum of Digits
+import java.util.*;
+
+    class Main{
+        public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            int total=0;
+            int rem=0;
+            
+          while(n!=0)
+          {
+              rem=n%10;
+              total+=rem;
+              n=n/10;
+               
+          }
+            System.out.print(total);
+    }
+}
+
+
+// code for to find  Factorial of a Number
+import java.util.*;
+class main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        long total=1;
+        
+        for(int i=1;i<n;i++)
+        {
+            total=total*i;
+        }
+        System.out.println(total);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
