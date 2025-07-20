@@ -1,0 +1,338 @@
+// You are using Java
+// import java.util.*;
+// class Main
+// {
+//     public static void  main(String args[])
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+        
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=sc.nextInt();
+//         }
+        
+//         Map<Integer,Integer> map=new LinkedHashMap<>();
+        
+//             for(int num:arr)
+//             {
+//                 map.put(num,map.getOrDefault(num,0)+1);
+//             }
+            
+//             for(Map.Entry<Integer,Integer> e:map.entrySet())
+//             {
+                
+//                 if(e.getValue() == 1)
+//                 {
+//                     System.out.println(e.getKey());
+//                     return;
+//                 }
+//             }
+        
+//     }
+// }
+
+
+
+// import  java.util.*;
+// class main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+        
+//         String str=sc.nextLine();
+        
+//         char[] ch=str.toCharArray();
+        
+//         Map<Character,Integer> map=new LinkedHashMap<>();
+        
+//         for(char ch_ar:ch)
+//         {
+//             map.put(ch_ar,map.getOrDefault(ch_ar,0)+1);
+//         }
+        
+//         System.out.println(map);
+        
+//         for(Map.Entry<Character,Integer> e:map.entrySet())
+//         {
+//             if(e.getValue()>1)
+//             {
+//                 System.out.println(e.getKey()+" : "+e.getValue());
+//             }
+//         }
+        
+//     }
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// Print all numbers that appear more than once
+
+// import java.util.*;
+// class main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+        
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+        
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=sc.nextInt();
+//         }
+        
+//         Map<Integer,Integer> map=new LinkedHashMap<>();
+        
+//         for(int num:arr)
+//         {
+//             map.put(num,map.getOrDefault(num,0)+1);
+//         }
+        
+//         for(Map.Entry<Integer,Integer> e:map.entrySet())
+//         {
+//             if(e.getValue()>1)
+//             {
+//                 System.out.println(e.getKey()+" : "+e.getValue());
+//             }
+//         }
+//     }
+// }
+
+
+
+// Find the number that appears only once
+// import java.util.*;
+// class main{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+        
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+        
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=sc.nextInt();
+//         }
+        
+//         Map<Integer,Integer> map=new HashMap<>();
+        
+//         for(int num:arr)
+//         {
+//             map.put(num,map.getOrDefault(num,0)+1);
+//         }
+        
+//         for(Map.Entry<Integer,Integer> e:map.entrySet())
+//         {
+//             if(e.getValue()==1)
+//             {
+//                 System.out.println(e.getKey()+" : "+e.getValue());
+//             }
+//         }
+// }
+// }
+
+
+
+// Sort numbers by their frequency
+
+
+import java.util.*;
+class main{
+    
+    public static void main(String[] args)
+    {
+        
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        int arr[]=new int[n];
+        
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        Map<Integer,Integer> freq=new LinkedHashMap<>();
+        
+        for(int num:arr)
+        {
+            freq.put(num,freq.getOrDefault(num,0)+1);
+        }
+        
+        List<Integer> list=new ArrayList<>();
+        
+        for(int  num1:arr)
+        {
+            list.add(num1);
+            // System.out.print(list+" ");
+        }
+        
+        list.sort((a,b)->{
+            int freqA=freq.get(a);
+            int freqB=freq.get(b);
+        
+        if(freqA != freqB)
+        {
+            return freqB-freqB;
+        } 
+        else if()
+        {
+            a-
+        }  
+        });
+        
+        for(int num:list)
+        {
+            System.out.print(num+" ");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// sorting frequnce
+// You are using Java
+import java.util.*;
+class Main
+{
+    
+    public static void main(String[] args)
+    {
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        Map<Integer,Integer> freq=new HashMap<>();
+        
+        for(int num:arr)
+        {
+            freq.put(num,freq.getOrDefault(num,0)+1);
+        }
+        
+        // for(Map.Entry<Integer,Integer> e:freq.entrySet())
+        // {
+            
+        //     if(e.getValue()>1){
+                
+        //     System.out.println(e.getKey());
+        //     }
+        // }
+        
+        List<Integer> list=new ArrayList<>();
+        
+        for(int num:arr)
+        {
+            
+            list.add(num);
+        }
+        
+       list.sort((a,b)->
+       {
+           int freqA=freq.get(a);
+           int freqB=freq.get(b);
+           
+           
+           if(freqA != freqB)
+           {
+               return freqB - freqA;
+           }
+           
+           else 
+           {
+               
+               return a-b;
+           }
+       }
+       );
+       
+       
+       for(int num:list)
+       {
+           
+           System.out.print(num+" ");
+       }
+        
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
