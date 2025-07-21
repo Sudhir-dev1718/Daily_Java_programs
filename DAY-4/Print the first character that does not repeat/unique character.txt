@@ -1,0 +1,45 @@
+//print the first character that does not repeat (appears only once).
+If all characters repeat, print "No unique character".
+
+
+import  java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int i,j;
+        int count=0;
+        char ch1=' ';
+        char[] ch=str.toCharArray();
+        
+        // for(i=0;i<ch.length;i++)
+        // {
+        //     System.out.print(ch[i]+" ");
+        // }
+        // System.out.println();
+        
+        
+        for(i=0;i<ch.length;i++)
+        {
+            count=0;
+            for(j=0;j<ch.length;j++)
+            {
+              if(ch[i]==ch[j])
+              {
+                  count++;
+                  ch1=ch[i];
+              }
+            }
+            //   System.out.println(count);
+            
+            if(count==1)
+            {
+                System.out.print(ch1);
+                return;
+            }
+            
+        }
+        System.out.print("no unique character");
+    }
+}

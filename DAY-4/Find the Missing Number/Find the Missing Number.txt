@@ -1,0 +1,33 @@
+// Find the Missing Number
+import java.util.*;
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        
+        int totalsum=0;
+        int sum=0;
+        int missvalue=0;
+       
+        
+        int arr[]=new int[n-1];
+        
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        
+        for(int i=0;i<arr.length;i++)
+        {
+            sum+=arr[i];
+        }
+    
+        totalsum=n*(n+1)/2;
+        missvalue=totalsum-sum;
+        System.out.print(missvalue);
+        
+    }
+}
