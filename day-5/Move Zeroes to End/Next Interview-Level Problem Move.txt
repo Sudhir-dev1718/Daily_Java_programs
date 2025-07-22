@@ -1,0 +1,261 @@
+//  Next Interview-Level Problem: Move Zeroes to End
+
+📝 Problem Statement:
+You are given an integer array. Move all 0’s to the end of the array while maintaining the relative order of the non-zero elements.
+
+
+
+
+
+// import java.util.*;
+// class Main
+// {
+//     public static void main(String[] args)
+//   {
+//       Scanner sc=new Scanner(System.in);
+//       int n=sc.nextInt();
+//       int flag=0;
+      
+//       int arr[]=new int[n];
+//       for(int i=0;i<n;i++)
+//       {
+//           arr[i]=sc.nextInt();
+//       }
+      
+//       int target=sc.nextInt();
+//       for(int i=0;i<arr.length;i++)
+//       {
+//           for(int j=i+1;j<arr.length;j++)
+//           {
+//               if(arr[i]+arr[j]==target)
+//               {
+//                   System.out.println(i+" "+j);
+//                   flag=1;
+//                   return;
+//               }
+//           }
+//       }
+//         //   System.out.println();
+//       if(flag==0)
+//       {
+//           System.out.print("not found");
+//       }
+      
+//   }
+// }
+
+// import java.util.*;
+// class main
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+        
+//         int arr[]=new int[n];
+        
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=sc.nextInt();
+//         }
+        
+//         // List<Integer> list=new ArrayList<>();
+//       for(int i=0;i<arr.length;i++)
+//       {
+//           if(arr[i]!=0)
+//           {
+//               System.out.print(arr[i]+" ");
+//           }
+//       }
+//           for(int i=0;i<arr.length;i++)
+//       {
+//           if(arr[i]==0)
+//           {
+//               System.out.print(arr[i]+" ");
+//           }
+//       }
+    
+        
+//     }
+// }
+
+import java.util.*;
+class  main{
+    public static void main(String[] args)
+    {
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int arr[]=new int[n];
+        
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        
+        movezeros(arr);
+        
+    
+        
+        
+        
+    }
+    
+    
+    
+    
+    public static void  movezeros(int[] arr)
+    {
+        
+        int len=arr.length;
+        
+        int[] temp=new int[len];
+        
+        int j=0;
+        for(int i=0;i<len;i++)
+        {
+            if(arr[i]!=0){
+                 temp[j++]=arr[i];
+            }
+        }
+        
+        
+        while(j<len)
+        {
+            temp[j++]=0;
+        }
+        
+       
+    //   like why we reassiging this to temp tp arr means in main method arr is only decleared
+       
+        for(int i=0;i<len;i++)
+        {
+            System.out.print(temp[i]+" ");
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
