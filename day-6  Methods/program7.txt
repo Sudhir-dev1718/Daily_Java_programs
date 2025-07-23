@@ -1,0 +1,33 @@
+import java.util.*;
+class methodtask7
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter float1");
+		float f1=sc.nextFloat();
+		
+		System.out.println("enter float2");
+		float f2=sc.nextFloat();
+		
+		System.out.println("program starts");
+		
+		int num=display(f1,f2);
+		System.out.println("returned value= "+num);
+		
+		System.out.print("program ends");
+	}
+	
+	
+	public static int display(float f1,float f2)
+	{
+		System.out.println("hi dispaly");
+		System.out.println("f1 = "+f1);
+		System.out.println("f2 = "+f2);
+		Scanner scn=new Scanner(System.in);
+		
+		int rtnum=scn.nextInt();
+		return rtnum;
+	}
+}

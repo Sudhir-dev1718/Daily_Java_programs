@@ -1,0 +1,25 @@
+import java.util.*;
+class methodtask1
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		double a=sc.nextDouble();
+		long b=sc.nextLong();
+		
+		System.out.println("hi main");
+		display(a,b);
+		System.out.print("bye main");
+		
+		
+	}
+	
+	
+	public static void display(double a,long b)
+	{
+		System.out.println("hi display");
+		System.out.println(a);
+		System.out.println(b);
+	}
+			
+}

@@ -1,0 +1,26 @@
+import java.util.*;
+class methodtask5
+{
+	public static void main(String[] args)
+	{
+		double d=17.18;
+		int n=18;
+		char ch='k';
+		System.out.println("progrm starts");
+		
+		String str1=display(d,n,ch);
+		System.out.println(str1);
+		System.out.print("program ends");
+	}
+	
+	public static String display(double d, int n, char ch)
+	{
+		System.out.println("hi m1");
+		System.out.println(d);
+		System.out.println(n);
+		System.out.println(ch);
+		String str="suhdir";
+		return str;
+		
+	}
+}

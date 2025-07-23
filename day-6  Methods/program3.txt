@@ -1,0 +1,31 @@
+import java.util.*;
+class  methodtask3
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter float");
+		float f1=sc.nextFloat();
+		float f2=sc.nextFloat();
+		
+		System.out.println("enter double");
+		double d1=sc.nextDouble();
+		
+		System.out.println("hi main");
+		dispaly(f1,f2,d1);
+		System.out.print("bye main");
+		
+	}
+	
+	
+	public static void dispaly(float a,float b,double c)
+	{
+		System.out.println("hi dispaly");
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		
+		
+	}
+	
+}

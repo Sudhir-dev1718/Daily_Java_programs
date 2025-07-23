@@ -1,0 +1,30 @@
+import java.util.*;
+class methodtask6
+{
+	public static void main(String[] args)
+	{
+		
+	int n=17;
+	boolean b=true;
+	String str="virat";
+	char ch='k';
+	System.out.println("progarm starts");
+	char x=display(n,b,str,ch);
+	System.out.println(x);
+	System.out.println("program ends");
+	
+	}
+	
+	public static char display(int n,boolean b,String str,char ch)
+	{
+		System.out.println("hi display");
+		
+		System.out.println(n);
+		System.out.println(b);
+		System.out.println(str);
+		System.out.println(ch);
+		char ch1='M';
+		return ch1;
+	}
+	
+}

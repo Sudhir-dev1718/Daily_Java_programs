@@ -1,0 +1,29 @@
+import java.util.*;
+class methodtask2
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter char");
+		char ch=sc.next().charAt(0);
+		System.out.println("enter string");
+		String str=sc.next();
+		
+		System.out.println("enter boolean");
+		boolean boo=sc.nextBoolean();
+		
+		System.out.println("hi main");
+		display(ch,str,boo);
+		System.out.println("bye main");
+	}
+	
+	public static void display(char ch,String str,boolean boo)
+	{
+		System.out.println("hi display");
+		System.out.println(ch);
+		System.out.println(str);
+		System.out.println(boo);
+		
+	}
+}

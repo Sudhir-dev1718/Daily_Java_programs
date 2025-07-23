@@ -1,0 +1,25 @@
+import java.util.*;
+class methodtask4
+{
+	public static  void main(String[] args)
+	{
+		float f1=17.1f;
+		float f2=18.2f;
+		System.out.println("program starts");
+		boolean x=m1(f1,f2);
+		System.out.println(x);
+		System.out.print("program ends");
+		
+	}
+	
+	
+	public static boolean m1(float f1,float f2)
+	{
+		System.out.println("hi m1");
+		System.out.println("float = "+f1);
+		System.out.println("float = "+f2);
+		boolean b=true;
+		return b;
+		
+	}
+}
