@@ -1,0 +1,37 @@
+    // find if the string is palindrom or not
+    import java.util.*;
+    class Maain
+    {
+        
+        public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            String str=sc.nextLine();
+            
+            palindrom(str);
+            
+            }
+            
+            
+            
+            public static void palindrom(String str)
+            {
+                  String strrev="";
+            
+            for(int i=0;i<str.length();i++)
+            {
+                strrev=str.charAt(i)+strrev;
+            }
+            
+            if(strrev.equals(str))
+            {
+                System.out.print("it is palindrom");
+                
+            }
+            
+            else
+            {
+                System.out.print("not palindrom");
+            }
+            }
+    }
